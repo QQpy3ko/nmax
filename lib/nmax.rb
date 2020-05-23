@@ -5,9 +5,10 @@ module Nmax
 
   class NmaxRunner
     class << self
-      def run(n)
+
+      def run(n, stdin = STDIN)
         int_array = []
-        STDIN.each do |line|
+        stdin.each do |line|
           line.chomp.scan(/\d+/) do | int_subsequence |
             int_array << int_subsequence.to_i
           end
@@ -15,9 +16,9 @@ module Nmax
         if int_array.empty?
           puts "No integers in the source"
         elsif int_array.length < n
-          puts "Found only #{int_array.length} integers in the source"
+          puts "Count of integers in the source: #{int_array.length}"
         end
-        puts int_array.max(n)
+        int_array.max(n)
       end
     end
   end

@@ -2,4 +2,4 @@
 
 require "nmax"
 
-Nmax::NmaxRunner.run(ARGV[0].to_i)
+puts Nmax::NmaxRunner.run(ARGV[0].to_i)

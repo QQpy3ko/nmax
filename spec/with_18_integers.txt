@@ -1,0 +1,21 @@
+# jsdiff
+3
+[![Sauce Test Status](https://saucelabs.com/buildstatus/jsdiff)](https://saucelabs.com/u/jsdiff)2
+34
+A javascript text differencing implementation.456
+675
+["An O(ND) Difference Algorithm and its Variations" (Myers, 1986)](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.4.6927).
+
+```bash34535
+2
+npm install diff --save5678
+```
+67
+    Returns a list of change objects (See below).
+56
+o
+999
+    Returns a list of change objects (See below).
+28897
+    Options
+
