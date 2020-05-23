@@ -12,6 +12,11 @@ module Nmax
             int_array << int_subsequence.to_i
           end
         end
+        if int_array.empty?
+          puts "No integers in the source"
+        elsif int_array.length < n
+          puts "Found only #{int_array.length} integers in the source"
+        end
         puts int_array.max(n)
       end
     end
