@@ -1,6 +1,6 @@
-require_relative "./nmax/version"
+require "nmax/version"
 
-module Lib
+module Nmax
   class Error < StandardError; end
 
   class NmaxRunner
@@ -17,4 +17,3 @@ module Lib
     end
   end
 end
-
